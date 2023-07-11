@@ -1,8 +1,7 @@
 import React from 'react';
-import Image from '../assets/avatar.svg';
-import { FaGithub, FaDribbble } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { fadeIn } from '../variants';
 
 const Banner = () => {
@@ -12,7 +11,8 @@ const Banner = () => {
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
           {/* text */}
           <div className='flex-1 text-center font-secondary lg:text-left'>
-            <motion.h1 variants={fadeIn('up', 0.3)}
+            <motion.h1
+              variants={fadeIn('up', 0.3)}
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
@@ -20,59 +20,52 @@ const Banner = () => {
             >
               Bautista <span>Bauzá</span>
             </motion.h1>
-            <motion.div variants={fadeIn('up', 0.4)}
+            <motion.div
+              variants={fadeIn('up', 0.4)}
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'
             >
               <span className='text-white mr-4'>I am a</span>
-              <TypeAnimation sequence={[
-                'Front-End Developer',
-                2000,
-              ]}
-                speed={25} className='text-accent' wrapper='span' repeat={Infinity} />
+              <TypeAnimation
+                sequence={['Front-End Developer', 2000]}
+                speed={25}
+                className='text-accent'
+                wrapper='span'
+                repeat={Infinity}
+              />
             </motion.div>
-            <motion.p variants={fadeIn('up', 0.5)}
+            <motion.p
+              variants={fadeIn('up', 0.5)}
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-8 max-w-lg mx-auto lg:mx-0'>
-              Lorem ipsum dolor sit amet. Sed nemo repellat qui distinctio quos et sequi cumque qui quos quas vel porro minima. Et excepturi molestias vel tenetur dolorum ut quaerat voluptates. Qui odit voluptatem non reprehenderit dolores eos harum doloribus ut tenetur deleniti ab quia ipsa.
+              className='mb-8 max-w-lg mx-auto lg:mx-0'
+            >
+              Hello! I'm Bautista Bauzá, a Front-End developer passionate about creating amazing web experiences. I specialize in technologies like HTML, CSS and JavaScript, React, and I'm constantly learning and exploring new tools and frameworks. My goal is to provide creative and functional solutions. Let's work together to take your ideas to the next level!        
             </motion.p>
-            <motion.div variants={fadeIn('up', 0.6)}
-              initial='hidden'
-              whileInView={'show'}
-              viewport={{ once: false, amount: 0.7 }}
-              className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-              <button className='btn btn-lg'>Contact Me</button>
-              <a href='#' className='text-gradient btn-link'>My Portfolio</a>
-            </motion.div>
-            {/* socials */}
-            <motion.div variants={fadeIn('up', 0.7)}
-              initial='hidden'
-              whileInView={'show'}
-              viewport={{ once: false, amount: 0.7 }}
-              className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-              <a href='#'>
-                <FaGithub />
-              </a>
-              <a href='#'>
-                <FaDribbble />
-              </a>
-            </motion.div>
           </div>
-          {/* image */}
-          <motion.div variants={fadeIn('down', 0.5)}
-            initial='hidden'
-            whileInView={'show'}
-            className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
-            <img src={Image} alt='Bautista Bauzá' />
-          </motion.div>
+          {/* socials */}
+          
+            <motion.div
+              variants={fadeIn('up', 0.7)}
+              initial='hidden'
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.7 }}
+              className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'
+            >
+              <a href='https://github.com/bautistax' className='text-gray-500 hover:text-black'>
+                <FaGithub className='text-4xl' />
+              </a>
+              <a href='https://www.linkedin.com/in/bautista-bauz%C3%A1-8ba37325b/' className='text-gray-500 hover:text-blue-700'>
+                <FaLinkedin className='text-4xl' />
+              </a>
+            </motion.div>
+          
         </div>
       </div>
     </section>
-
   );
 };
 

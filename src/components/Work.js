@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
-import img1 from '../assets/portfolio-img1.png';
+import { Link } from 'react-scroll';
+import img1 from '../assets/BookBuster.jpeg';
 
 const Work = () => {
   return (
@@ -13,42 +14,50 @@ const Work = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
+            className='flex-1 flex flex-col gap-y-12 mb-7 lg:mb-0'>
             {/* text */}
-            <div>
+            <div className='lg:mr-16'>
               <h2 className='h2 leading-tight text-accent'>
                 My latest <br />
                 Work.
               </h2>
-              <p className='max-w-sm mb-16'>
-                Lorem ipsum dolor sit amet. Sed nemo repellat qui distinctio quos et sequi cumque qui quos quas vel porro minima. Et excepturi molestias vel tenetur dolorum ut quaerat voluptates. Qui odit voluptatem non reprehenderit dolores eos harum doloribus ut tenetur deleniti ab quia ipsa.
-              </p>
-              <button className='btn btn-sm'>View all proyects</button>
-            </div>
-            {/* image */}
-            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
-              {/* overlay */}
-              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              {/* img */}
-              <img className='group-hover:scale-125 transition-all duration-500' src={img1} alt='' />
-              {/* pretitle */}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Henry's Final Project</span>
-              </div>
-              {/* title */}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3x1 text-white'>
-                  BookBuster
-                </span>
-              </div>
+              <p className='max-w-sm mb-10'>
+                During 3 weeks at SoyHenry, alongside 6 colleagues, I developed "BookBuster". As a Frontend enthusiast, I focused on bringing the user interface to life using technologies like React, Redux, Javascript, and Tailwind CSS, among others. On the Backend, we employed Node.js, Express, PostgreSQL, and Sequelize. It was an exciting project that showcased our growth and passion as developers.</p>
+              <Link to='proyects'>
+                <button className='btn btn-sm'>View all proyects</button>
+              </Link>
             </div>
           </motion.div>
-          <motion.div variants={fadeIn('left', 0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className='flex-1 flex flex-col gap-y-10'>
-          </motion.div>
+          {/* New wrapper div to prevent centering */}
+          <div className="lg:flex-1 lg:ml-auto">
+            <motion.div
+              variants={fadeIn('left', 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className='flex-1 flex flex-col gap-y-10'>
+
+              {/* image */}
+              <a href='https://book-buster-front-fhekz.vercel.app'>
+              <div className='lg:flex-shrink-0 w-30 h-30 group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+                {/* overlay */}
+                <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+                {/* img */}
+                <img className='group-hover:scale-125 transition-all duration-500' src={img1} alt='' />
+                {/* pretitle */}
+                <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+                  <span className='text-gradient'>Henry's Final Project</span>
+                </div>
+                {/* title */}
+                <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
+                  <span className='text-3xl text-white'>
+                    BookBuster
+                  </span>
+                </div>
+              </div>
+              </a>
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>

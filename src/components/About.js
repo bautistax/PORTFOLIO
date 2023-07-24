@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
@@ -12,13 +13,6 @@ const About = () => {
     <section className='section' id='about' ref={ref}>
       <div className='container mx-auto'>
         <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
-          {/* img */}
-          <motion.div variants={fadeIn('right', 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top'
-          ></motion.div>
           {/* text */}
           <motion.div variants={fadeIn('left', 0.5)}
             initial="hidden"
@@ -29,7 +23,7 @@ const About = () => {
             <h2 className='h2 text-accent'>About me.</h2>
             <h3 className='h3 mb-4'>I'm a Front-end web developer with 1 year of experience </h3>
             <p className='mb-6'>
-              Lorem ipsum dolor sit amet. Sed nemo repellat qui distinctio quos et sequi cumque qui quos quas vel porro minima. Et excepturi molestias vel tenetur dolorum ut quaerat voluptates. Qui odit voluptatem non reprehenderit dolores eos harum doloribus ut tenetur deleniti ab quia ipsa.
+              I am a junior fullstack programmer focused on frontend programming. One of my biggest motivations is to learn new skills. I recently finished the course at Henry, where I had the opportunity to work on various projects, using technologies and frameworks such as Javascript, HMTL/CSS, React, Redux, Tailwind CSS, among others; and develop my skills in the world of software. My experience in Henry's projects allowed me to apply my knowledge and work in a team, which gave me a complete vision of software development. I now hope to take my skills to the next level and continue learning in a work environment.
             </p>
             {/* stats */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
@@ -53,10 +47,9 @@ const About = () => {
               </div>
             </div>
             <div className='flex gap-x-8 items-center'>
-              <button className='btn btn-lg'>Contact me</button>
-              <a href='#' className='text-gradient btn-link'>
-                My Portfolio
-              </a>
+              <Link to='contact'>
+                <button className='btn btn-lg'>Contact me</button>
+              </Link>
             </div>
           </motion.div>
         </div>

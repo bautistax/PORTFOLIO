@@ -7,7 +7,7 @@ import { fadeIn } from '../variants';
 const Banner = () => {
   return (
     <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
-      <div className="container mx-auto">
+      <div className="container mx-auto mb-64">
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
           {/* text */}
           <div className='flex-1 text-center font-secondary lg:text-left'>
@@ -53,7 +53,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'
+              className='flex text-[20px] gap-x-6 max-w-max mx-auto mt-14 lg:mx-0'
             >
               <a href='https://github.com/bautistax' className='text-gray-500 hover:text-black'>
                 <FaGithub className='text-4xl' />

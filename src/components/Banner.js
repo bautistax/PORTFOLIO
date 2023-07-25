@@ -30,7 +30,7 @@ const Banner = () => {
               <span className='text-white mr-4'>I am a</span>
               <TypeAnimation
                 sequence={['Front-End Developer', 2000]}
-                speed={25}
+                speed={1}
                 className='text-accent'
                 wrapper='span'
                 repeat={Infinity}
@@ -43,7 +43,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='mb-8 max-w-lg mx-auto lg:mx-0'
             >
-              Hello! I'm Bautista Bauzá, a Front-End developer passionate about creating amazing web experiences. I specialize in technologies like HTML, CSS and JavaScript, React, and I'm constantly learning and exploring new tools and frameworks. My goal is to provide creative and functional solutions. Let's work together to take your ideas to the next level!        
+              Hello I'm Bautista Bauzá, a Front-End developer passionate about creating amazing web experiences. I specialize in technologies like HTML, CSS and JavaScript, React, and I'm constantly learning and exploring new tools and frameworks. My goal is to provide creative and functional solutions. Let's work together to take your ideas to the next level!        
             </motion.p>
           </div>
           {/* socials */}

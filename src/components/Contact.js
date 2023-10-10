@@ -6,22 +6,16 @@ import { FaLinkedin, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 const Contact = () => {
   // Cambia "tudireccion@gmail.com" por tu dirección de correo electrónico
   const email = 'jbautistabauza@gmail.com';
-  const subject = 'Mensaje para ti'; // Asunto del correo
-  const body = 'Escribe tu mensaje aquí'; // Cuerpo del correo
+  const subject = 'Mensaje para ti';
+  const body = 'Escribe tu mensaje aquí';
 
-  // Crear el enlace "mailto" con la dirección de correo electrónico y el asunto
-  const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
-
-  // Enlace específico de Gmail para abrir el cliente de correo con un mensaje predeterminado
-  const gmailLink = `https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new&to=${encodeURIComponent(
+  const gmailLink = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${encodeURIComponent(
     email
-  )}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  )}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
   const handleGmailClick = (e) => {
     e.preventDefault();
-    const isGmail = /gmail\.com/.test(email);
-    const mailtoLink = isGmail ? gmailLink : `mailto:${email}?subject=${encodeURIComponent(subject)}`;
-    window.open(mailtoLink, '_blank');
+    window.open(gmailLink, '_blank');
   };
 
 
@@ -73,7 +67,7 @@ const Contact = () => {
             <FaWhatsapp className='text-6xl' />
           </a>
 
-          <a href={mailtoLink} onClick={handleGmailClick} className="mx-4 text-gray-500 hover:text-red-700">
+          <a href={gmailLink} onClick={handleGmailClick} className="mx-4 text-gray-500 hover:text-red-700">
             <FaEnvelope className="text-6xl" />
           </a>
         </div>

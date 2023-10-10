@@ -5,6 +5,7 @@ import img1 from '../assets/BookBuster.jpeg';
 import img2 from '../assets/bk-countries.jpg';
 import img3 from '../assets/bk-rickandmorty.jpg';
 import img4 from '../assets/QR.jpg';
+import img5 from "../assets/weatherimage.png";
 
 const AllProyects = () => {
   return (
@@ -107,6 +108,26 @@ const AllProyects = () => {
                 <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
                   <span className='text-3xl text-white'>
                     QR-component
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            {/* image 5*/}
+            <a href='https://weatherappi.vercel.app/'>
+              <div className='w-full lg:w-80 h-72 group relative overflow-hidden border-2 border-white/50 rounded-xl mx-3'>
+                {/* overlay */}
+                <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+                {/* img */}
+                <img className='group-hover:scale-125 transition-all duration-500 w-full h-full object-cover' src={img5} alt='' />
+                {/* pretitle */}
+                <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+                  <span className='text-gradient'>Personal Proyect</span>
+                </div>
+                {/* title */}
+                <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
+                  <span className='text-3xl text-white'>
+                    WeatherApp
                   </span>
                 </div>
               </div>

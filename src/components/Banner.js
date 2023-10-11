@@ -56,10 +56,10 @@ const Banner = () => {
               className='flex text-[20px] gap-x-6 max-w-max mx-auto mt-14 lg:mx-0'
             >
               <a href='https://github.com/bautistax' className='text-gray-500 hover:text-black'>
-                <FaGithub className='text-4xl' />
+                <FaGithub className='text-6xl' />
               </a>
               <a href='https://www.linkedin.com/in/bautista-bauz%C3%A1-8ba37325b/' className='text-gray-500 hover:text-blue-700'>
-                <FaLinkedin className='text-4xl' />
+                <FaLinkedin className='text-6xl' />
               </a>
             </motion.div>
           

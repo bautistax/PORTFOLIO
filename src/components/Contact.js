@@ -43,7 +43,7 @@ const Contact = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className='flex-1 flex justify-start items-center lg:items-start lg:justify-center lg:mr-4'>
+        className='flex-1 flex justify-start items-center lg:items-start lg:justify-start lg:mr-4'>
         <div>
           <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>Get in touch</h4>
           <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>Let's work <br /> together!
@@ -57,7 +57,7 @@ const Contact = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className='flex-1 flex justify-center items-center lg:items-end lg:justify-start mt-8 lg:mt-0'>
+        className='flex-1 flex absolute justify-center items-center end-16  lg:items-end lg:justify-end mt-8 lg:mt-20'>
         <div className='flex items-center'>
           <a href='https://www.linkedin.com/in/bautista-bauz%C3%A1-8ba37325b/' className='mx-4 text-gray-500 hover:text-blue-700'>
             <FaLinkedin className='text-6xl' />

@@ -6,7 +6,7 @@ import img1 from '../assets/BookBuster.jpeg';
 
 const Work = () => {
   return (
-    <section className='section' id='work'>
+    
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row gap-x-10'>
           <motion.div
@@ -22,7 +22,7 @@ const Work = () => {
                 Work.
               </h2>
               <p className='max-w-sm mb-10'>
-                During 3 weeks at SoyHenry, alongside 6 colleagues, I developed "BookBuster". As a Frontend enthusiast, I focused on bringing the user interface to life using technologies like React, Redux, Javascript, and Tailwind CSS, among others. On the Backend, we employed Node.js, Express, PostgreSQL, and Sequelize. It was an exciting project that showcased our growth and passion as developers.</p>
+                </p>
               <Link to='proyects'>
                 <button className='btn btn-sm'>View all proyects</button>
               </Link>
@@ -60,7 +60,6 @@ const Work = () => {
           </div>
         </div>
       </div>
-    </section>
   );
 };
 

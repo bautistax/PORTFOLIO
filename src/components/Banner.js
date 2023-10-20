@@ -16,7 +16,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='text-[3vw] lg:text-[110px] font-bold leading-[0.8]'
+              className='text-[10vw] lg:text-[110px] font-bold leading-[0.8]'
             >
               Bautista <span>Bauzá</span>
             </motion.h1>
@@ -25,7 +25,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-4 lg:mb-6 text-[2vw] lg:text-[36px] font-secondary font-semibold uppercase leading-[1]'
+              className='mb-4 lg:mb-6 text-[7vw] lg:text-[36px] font-secondary font-semibold uppercase leading-[1]'
             >
               <span className='text-white mr-4'>I am a</span>
               <TypeAnimation
@@ -41,7 +41,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-4 text-sm lg:text-base max-w-lg mx-auto lg:mx-0'
+              className='mb-4 text-sm lg:text-lg max-w-lg mx-auto lg:mx-0'
             >
               Hello I'm Bautista Bauzá, a Front-End developer passionate about creating amazing web experiences. I specialize in technologies like HTML, CSS and JavaScript, React, and I'm constantly learning and exploring new tools and frameworks. My goal is to provide creative and functional solutions. Let's work together to take your ideas to the next level!        
             </motion.p>
@@ -52,7 +52,7 @@ const Banner = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-            className='flex text-[2vw] gap-x-4 max-w-max mx-auto mt-8 lg:mx-0'
+            className='flex text-[2vw] gap-x-4 max-w-max mx-auto mt-8 mb-36 lg:mx-0'
           >
             <a href='https://github.com/bautistax' className='text-gray-500 hover:text-black'>
               <FaGithub className='text-4xl lg:text-6xl' />

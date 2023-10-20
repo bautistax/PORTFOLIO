@@ -34,49 +34,51 @@ const Contact = () => {
 
 
   return (
-  <div className='container mx-auto mt-72 mb-36'>
-    <div className='flex flex-col lg:flex-row'>
-      {/* text */}
-      <motion.div
-        variants={fadeIn('right', 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}
-        className='flex-1 flex justify-start items-center lg:items-start lg:justify-start lg:mr-4'>
-        <div>
-          <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>Get in touch</h4>
-          <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>Let's work <br /> together!
-          </h2>
-        </div>
-      </motion.div>
-
-      {/* Container for icons */}
-      <motion.div
-        variants={fadeIn('right', 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}
-        className='flex-1 flex absolute justify-center items-center end-16  lg:items-end lg:justify-end mt-8 lg:mt-20'>
-        <div className='flex items-center'>
-          <a href='https://www.linkedin.com/in/bautista-bauz%C3%A1-8ba37325b/' className='mx-4 text-gray-500 hover:text-blue-700'>
-            <FaLinkedin className='text-6xl' />
-          </a>
-
-          <a href={whatsappLink} onClick={handleWhatsappClick} className='mx-4 text-gray-500 hover:text-green-500'>
-            <FaWhatsapp className='text-6xl' />
-          </a>
-
-          <a href={gmailLink} onClick={handleGmailClick} className="mx-4 text-gray-500 hover:text-red-700">
-            <FaEnvelope className="text-6xl" />
-          </a>
-        </div>
-      </motion.div>
+    <div id='contact' className='container mx-auto mt-72 mb-36'>
+      <div className='flex flex-col lg:flex-row'>
+  
+        {/* Text Section */}
+        <motion.div
+          variants={fadeIn('right', 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className='flex-1 flex justify-center lg:justify-start items-center lg:items-start lg:mr-4 mb-8 lg:mb-0'>
+  
+          <div className='text-center lg:text-left'>
+            <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>Get in touch</h4>
+            <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>Let's work <br /> together!</h2>
+          </div>
+  
+        </motion.div>
+  
+        {/* Icons Section */}
+        <motion.div
+          variants={fadeIn('right', 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className='flex-1 flex justify-center lg:justify-end items-center'>
+  
+          <div className='flex flex-col items-center lg:flex-row lg:items-center'>
+            <a href='https://www.linkedin.com/in/bautista-bauz%C3%A1-8ba37325b/' className='mx-4 text-gray-500 hover:text-blue-700'>
+              <FaLinkedin className='text-6xl' />
+            </a>
+  
+            <a href={whatsappLink} onClick={handleWhatsappClick} className='mx-4 text-gray-500 hover:text-green-500'>
+              <FaWhatsapp className='text-6xl' />
+            </a>
+  
+            <a href={gmailLink} onClick={handleGmailClick} className="mx-4 text-gray-500 hover:text-red-700">
+              <FaEnvelope className="text-6xl" />
+            </a>
+          </div>
+  
+        </motion.div>
+      </div>
     </div>
-  </div>
-
-
-
   );
+  
 };
 
 export default Contact;

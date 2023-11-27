@@ -6,7 +6,7 @@ import img1 from "../assets/BookBuster.jpeg";
 import img2 from "../assets/bk-countries.jpg";
 import img3 from "../assets/bk-rickandmorty.jpg";
 import img4 from "../assets/QR.jpg";
-import img5 from "../assets/weatherimage.png";
+import img5 from "../assets/weatherweb.jpg";
 
 const AllProyects = () => {
   const projects = [

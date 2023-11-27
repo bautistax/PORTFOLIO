@@ -6,8 +6,7 @@ import { fadeIn } from '../variants';
 
 const Banner = () => {
   return (
-    
-      <div className="container mx-auto mb-8 lg:mb-64">
+      <div id='banner' className="container mx-auto mb-8 lg:mb-64">
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
           {/* text */}
           <div className='flex-1 text-center lg:text-left'>
@@ -54,7 +53,7 @@ const Banner = () => {
             viewport={{ once: false, amount: 0.7 }}
             className='flex text-[2vw] gap-x-4 max-w-max mx-auto mt-8 mb-36 lg:mx-0'
           >
-            <a href='https://github.com/bautistax' className='text-gray-500 hover:text-black'>
+            <a href='https://github.com/bautistax' className='text-gray-500 hover:text-white'>
               <FaGithub className='text-4xl lg:text-6xl' />
             </a>
             <a href='https://www.linkedin.com/in/bautista-bauz%C3%A1-8ba37325b/' className='text-gray-500 hover:text-blue-700'>

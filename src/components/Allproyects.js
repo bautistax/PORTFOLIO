@@ -103,7 +103,7 @@ const AllProyects = () => {
 
   return (
     <section id="projects" className="h-screen">
-      <div className="container mx-auto mt-32 mb-44 lg:px-4 lg:mx-14">
+      <div className="container mx-auto mt-32 mb-24 lg:px-4 lg:mx-14">
         <div className="lg:flex-1 lg:ml-auto">
           <h2 className="text-4xl lg:text-5xl leading-tight text-accent mb-6 lg:mb-14">
             All&nbsp;&nbsp;Proyects

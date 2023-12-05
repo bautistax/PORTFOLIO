@@ -34,15 +34,15 @@ const Contact = () => {
 
   return (
     <section id="contact" className="h-screen">
-      <div className="container mx-auto mt-72 mb-36">
-        <div className="flex flex-col lg:flex-row">
+      <div className="container mx-auto px-4 lg:px-8 mt-72 mb-36">
+        <div className="flex flex-col lg:flex-col">
           {/* Text Section */}
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex justify-center lg:justify-start items-center lg:items-start lg:mr-4 mb-8 lg:mb-0"
+            className="flex-1 flex justify-center lg:justify-center items-center mb-8 lg:mb-0"
           >
             <div className="text-center lg:text-left">
               <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wide">
@@ -60,30 +60,30 @@ const Contact = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex justify-center lg:justify-end items-center"
+            className="flex-1 flex justify-center items-center"
           >
             <div className="flex flex-col items-center lg:flex-row lg:items-center">
               <a
                 href="https://www.linkedin.com/in/bautista-bauz%C3%A1-8ba37325b/"
-                className="mx-4 text-gray-500 hover:text-blue-700"
+                className="mx-2 lg:mx-4 text-gray-500 hover:text-blue-700"
               >
-                <FaLinkedin className="text-6xl" />
+                <FaLinkedin className="text-6xl lg:text-6xl" />
               </a>
 
               <a
                 href={whatsappLink}
                 onClick={handleWhatsappClick}
-                className="mx-4 text-gray-500 hover:text-green-500"
+                className="mx-2 lg:mx-4 text-gray-500 hover:text-green-500"
               >
-                <FaWhatsapp className="text-6xl" />
+                <FaWhatsapp className="text-6xl lg:text-6xl" />
               </a>
 
               <a
                 href={gmailLink}
                 onClick={handleGmailClick}
-                className="mx-4 text-gray-500 hover:text-red-700"
+                className="mx-2 lg:mx-4 text-gray-500 hover:text-red-700"
               >
-                <FaEnvelope className="text-6xl" />
+                <FaEnvelope className="text-6xl lg:text-6xl" />
               </a>
             </div>
           </motion.div>

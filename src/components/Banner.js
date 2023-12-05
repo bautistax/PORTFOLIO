@@ -63,13 +63,13 @@ const Banner = () => {
               href="https://github.com/bautistax"
               className="text-gray-500 hover:text-white"
             >
-              <FaGithub className="text-4xl lg:text-6xl" />
+              <FaGithub className="text-6xl lg:text-6xl" />
             </a>
             <a
               href="https://www.linkedin.com/in/bautista-bauz%C3%A1-8ba37325b/"
               className="text-gray-500 hover:text-blue-700"
             >
-              <FaLinkedin className="text-4xl lg:text-6xl" />
+              <FaLinkedin className="text-6xl lg:text-6xl" />
             </a>
           </motion.div>
         </div>
